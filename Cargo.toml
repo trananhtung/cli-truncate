@@ -1,0 +1,26 @@
+[package]
+name = "cli-truncate"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.81"
+description = "Truncate a string to a terminal display width with an ellipsis — wide-character (CJK) and ANSI-escape aware."
+documentation = "https://docs.rs/cli-truncate"
+repository = "https://github.com/trananhtung/cli-truncate"
+homepage = "https://github.com/trananhtung/cli-truncate"
+readme = "README.md"
+license = "MIT OR Apache-2.0"
+keywords = ["truncate", "ansi", "terminal", "cli", "width"]
+categories = ["command-line-interface", "text-processing"]
+authors = ["trananhtung"]
+exclude = ["/.github", "/.gitignore"]
+
+[dependencies]
+unicode-width = "0.2"
+
+[lints.rust]
+missing_docs = "warn"
+unsafe_code = "forbid"
+
+[lints.clippy]
+all = "warn"
+pedantic = "warn"
